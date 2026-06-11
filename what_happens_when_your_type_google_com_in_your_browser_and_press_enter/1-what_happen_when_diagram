@@ -1,0 +1,20 @@
+## Diagram: What happens when you type https://www.google.com
+
+This file references the diagram illustrating the full request flow when typing `https://www.google.com` in a browser.
+
+### Diagram URL
+> Replace this line with your published diagram URL (e.g. from Gliffy, Lucidchart, or an image host).
+
+`https://your-diagram-url-here.png`
+
+---
+
+### Diagram covers:
+1. **DNS resolution** — browser → recursive resolver → root → TLD → authoritative NS → IP
+2. **TCP/IP** — 3-way handshake (SYN / SYN-ACK / ACK) on port 443
+3. **Firewall** — packet inspection, DDoS protection (Layer 3 & 7)
+4. **HTTPS/TLS** — certificate validation, key exchange, AES-256 encrypted channel
+5. **Load balancer** — round-robin, health checks, Anycast routing
+6. **Web server** — HTTP/2 request parsing, static routing
+7. **Application server** — business logic, dynamic HTML generation
+8. **Database** — Spanner/Bigtable queries, Redis cache lookups
